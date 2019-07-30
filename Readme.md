@@ -1,6 +1,6 @@
 # ASPxSpreadsheet - How to add a custom ribbon button and modify an active worksheet on its click
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t622138)**
+**[[Run Online]](https://codecentral.devexpress.com/t622138/)**
 <!-- run online end -->
 
 
