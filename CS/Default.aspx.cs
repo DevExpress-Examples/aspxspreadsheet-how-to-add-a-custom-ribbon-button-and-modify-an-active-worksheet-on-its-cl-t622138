@@ -31,12 +31,12 @@ public partial class _Default : System.Web.UI.Page {
     void PrepareTitleRange(Worksheet worksheet) {
         worksheet.Cells["B1"].FillColor = Color.LightBlue;
         worksheet.Cells["B1"].Value = "Cell value types";
-        Range range = worksheet.Range["A1:B1"];
+        CellRange range = worksheet.Range["A1:B1"];
         range.Style = worksheet.Workbook.Styles["Title"];
         range.Merge();
     }
     void PrepareHeaderCells(Worksheet worksheet) {
-        Range header = worksheet.Range["A2:B2"];
+        CellRange header = worksheet.Range["A2:B2"];
         header[0].Value = "Type";
         header[1].Value = "Value";
         header.ColumnWidthInCharacters = 25;

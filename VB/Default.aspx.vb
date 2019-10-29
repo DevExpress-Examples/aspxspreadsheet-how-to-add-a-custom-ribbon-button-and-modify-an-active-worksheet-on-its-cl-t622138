@@ -33,13 +33,13 @@ Partial Public Class _Default
     Private Sub PrepareTitleRange(ByVal worksheet As Worksheet)
         worksheet.Cells("B1").FillColor = Color.LightBlue
         worksheet.Cells("B1").Value = "Cell value types"
-        Dim range As Range = worksheet.Range("A1:B1")
+        Dim range As CellRange = worksheet.Range("A1:B1")
         range.Style = worksheet.Workbook.Styles("Title")
         range.Merge()
     End Sub
     Private Sub PrepareHeaderCells(ByVal worksheet As Worksheet)
 
-        Dim header_Renamed As Range = worksheet.Range("A2:B2")
+        Dim header_Renamed As CellRange = worksheet.Range("A2:B2")
         header_Renamed(0).Value = "Type"
         header_Renamed(1).Value = "Value"
         header_Renamed.ColumnWidthInCharacters = 25
